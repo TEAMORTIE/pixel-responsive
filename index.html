@@ -23,25 +23,22 @@
         <h2>Back To Pixel</h2>
       </div>
       <nav>
-        <a id="menu" href="">Menu</a>
+        <!-- Checkbox pour activer/désactiver le menu sur mobile -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="menu">Menu</label>
+
+        <!-- Liens de navigation -->
         <a class="menu2" href="">Accueil</a>
         <a class="menu2" href="">Tournois</a>
-        <a class="menu2" href=""
-          >Exposition <br />
-          Consoles</a
-        >
-        <a class="menu2" href=""
-          >Histoire <br />
-          Nintendo</a
-        >
-        <a class="menu2" href=""
-          >Shigeru <br />
-          Miyamoto</a
-        >
-        <div id="dropdown">
+        <a class="menu2" href="">Exposition <br />Consoles</a>
+        <a class="menu2" href="">Histoire <br />Nintendo</a>
+        <a class="menu2" href="">Shigeru <br />Miyamoto</a>
+
+        <!-- Sous-menu pour "Autres" -->
+        <div class="menu2" id="dropdown">
           <a id="autres" href="">Autres</a>
           <div class="submenu">
-            <a href="">Atelier et Activité </a>
+            <a href="">Atelier et Activité</a>
             <a href="">Programme Festival</a>
             <a href="">Partenaire et Sponsors</a>
             <a href="">Boutique de Produit Dérivé</a>

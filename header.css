@@ -181,28 +181,25 @@ nav a:hover {
     display: none;
   }
 
-  /* Afficher le bouton Menu sur les petits écrans */
-  @media only screen and (max-width: 768px) {
-    #menu {
-      display: block;
-    }
+  #menu {
+    display: block;
+  }
 
-    /* Afficher le menu lorsque la case est cochée */
-    #menu-toggle:checked ~ .menu2 {
-      display: block;
-    }
+  /* Afficher le menu lorsque la case est cochée */
+  #menu-toggle:checked ~ .menu2 {
+    display: block;
+  }
 
-    /* Ajustement du sous-menu */
-    .submenu {
-      position: relative;
-      left: 0;
-    }
+  /* Ajustement du sous-menu */
+  .submenu {
+    position: relative;
+    left: 0;
+  }
 
-    /* Ajuster les liens du menu pour qu'ils soient en mode liste sur mobile */
-    nav {
-      display: grid;
-      gap: 0.5rem;
-      justify-items: center;
-    }
+  /* Ajuster les liens du menu pour qu'ils soient en mode liste sur mobile */
+  nav {
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
   }
 }
