@@ -67,4 +67,25 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1em !important;
+  }
+  p {
+    font-size: 1em !important;
+  }
+  #section2-1 {
+    display: grid !important;
+    justify-items: center;
+    text-align: center;
+    font-size: 0.7em;
+  }
+  #section2-1 img {
+    width: 70%;
+    margin-bottom: 20px;
+  }
 }

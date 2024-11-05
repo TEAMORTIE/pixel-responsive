@@ -73,7 +73,7 @@ nav a:hover {
   color: var(--secondary);
 }
 
-.dropdown {
+#dropdown {
   align-content: center;
   position: relative;
 }
@@ -105,8 +105,25 @@ nav a:hover {
   color: var(--secondary);
 }
 
-.dropdown:hover .submenu {
+#dropdown:hover .submenu {
   display: block;
+}
+/* Cacher la case à cocher */
+#menu-toggle {
+  display: none;
+}
+
+/* Style du bouton Menu en version mobile */
+#menu {
+  display: none; /* Par défaut, masqué sur les écrans de bureau */
+  padding: 15px;
+  font-family: var(--titre);
+  font-size: 1rem;
+  color: black;
+  background-color: var(--primary);
+  text-align: center;
+  cursor: pointer;
+  border: none;
 }
 @media only screen and (max-width: 768px) {
   h1 {
@@ -141,10 +158,51 @@ nav a:hover {
   #menu {
     display: block;
   }
+  /* Cacher la case à cocher */
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Style du bouton Menu en version mobile */
+  #menu {
+    display: none; /* Par défaut, masqué sur les écrans de bureau */
+    padding: 15px;
+    font-family: var(--titre);
+    font-size: 1rem;
+    color: black;
+    background-color: var(--primary);
+    text-align: center;
+    cursor: pointer;
+    border: none;
+  }
+
+  /* Masquer les liens du menu sur mobile */
   .menu2 {
     display: none;
   }
-  #menu:focus .menu2 {
-    display: block;
+
+  /* Afficher le bouton Menu sur les petits écrans */
+  @media only screen and (max-width: 768px) {
+    #menu {
+      display: block;
+    }
+
+    /* Afficher le menu lorsque la case est cochée */
+    #menu-toggle:checked ~ .menu2 {
+      display: block;
+    }
+
+    /* Ajustement du sous-menu */
+    .submenu {
+      position: relative;
+      left: 0;
+    }
+
+    /* Ajuster les liens du menu pour qu'ils soient en mode liste sur mobile */
+    nav {
+      display: grid;
+      gap: 0.5rem;
+      justify-items: center;
+    }
   }
 }
