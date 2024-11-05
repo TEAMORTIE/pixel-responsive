@@ -1,0 +1,70 @@
+:root {
+  --text: rgb(165, 202, 207);
+  --background: #f9fefc;
+  --primary: #d82622;
+  --secondary: #8198e9;
+  --accent: #6f59e2;
+  --titre: "Press Start 2P", system-ui;
+  --font2: "Roboto Slab", sans-serif;
+  --font3: "Teko", sans-serif;
+}
+
+main {
+  background-color: black;
+  width: 70%;
+  margin-left: 15%;
+  height: 5000px;
+  overflow-x: hidden;
+}
+#section1 img {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 2%;
+  box-shadow: var(--primary) 0 -2px 20px;
+}
+#section1 p {
+  color: var(--secondary);
+  font-size: 1.5em;
+  text-align: center;
+  font-family: var(--font3);
+  margin-left: 10%;
+  width: 80%;
+  text-shadow: var(--accent) 0 0 20px;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-left: 2%;
+  color: var(--primary);
+  text-align: start;
+
+  font-size: 3em;
+  font-family: var(--titre);
+}
+#section2-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section2 img {
+  width: 40%;
+  margin-left: 2%;
+  margin-top: 2em;
+}
+#section2-2 {
+  margin: 0% 2% 0% 2%;
+  color: var(--secondary);
+  font-family: var(--font3);
+  font-size: 1.3em;
+}
+button {
+  margin-top: 2em;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 1em 2em 1em 2em;
+}
+
+@media only screen and (max-width: 768px) {
+}

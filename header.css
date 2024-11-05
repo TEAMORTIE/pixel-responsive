@@ -13,6 +13,11 @@
 }
 body {
   font-family: var(--font2);
+
+  header {
+    position: sticky;
+    top: -124px;
+  }
 }
 #nav-supp {
   width: 100%;
@@ -48,7 +53,9 @@ nav {
   margin: 0;
   background-color: var(--primary);
 }
-
+#menu {
+  display: none;
+}
 nav a {
   text-decoration: none;
   color: black;
@@ -130,5 +137,14 @@ nav a:hover {
   }
   .submenu {
     margin-top: 0px;
+  }
+  #menu {
+    display: block;
+  }
+  .menu2 {
+    display: none;
+  }
+  #menu:focus .menu2 {
+    display: block;
   }
 }
