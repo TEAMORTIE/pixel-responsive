@@ -9,9 +9,10 @@
   --font3: "Teko", sans-serif;
 }
 body {
+  word-wrap: anywhere;
   background-image: url("https://img.freepik.com/vecteurs-libre/modele-ligne-spirale-abstraite-style-retro-vecteur-arriere-plan_1017-47993.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-attachment: fixed;
 }
 main {
@@ -139,7 +140,7 @@ button:hover {
   z-index: 0;
   width: 100%;
   display: grid;
-  height: 700px;
+  height: 900px;
   gap: 20px;
   margin-right: 0em;
   overflow-y: hidden;
@@ -172,13 +173,86 @@ span {
   }
 }
 
+#contact {
+  color: var(--secondary);
+  margin: 2% 0 0 2%;
+  display: flex;
+}
+iframe {
+  width: 100%;
+}
+#contact2 p {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+#contact2 {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+}
+#contact2 a {
+  font-size: 1em;
+  color: var(--primary);
+  margin-top: 3em;
+}
 footer {
   margin-left: 15%;
   width: 70%;
   background-color: black;
   text-align: center;
 }
+#reseaux {
+  margin-left: 2em;
+  margin-top: 2em;
+  display: flex;
+}
+#reseaux a {
+}
+#reseaux img {
+  width: 50%;
+}
+#reseaux img:hover {
+  box-shadow: var(--primary) 0 0 20px;
+}
 
+#contact a:hover {
+  text-shadow: var(--primary) 0 0 10px;
+}
+#formulaire {
+  margin-top: 5em;
+  display: block;
+}
+#formulaire h3 {
+  text-align: center;
+}
+form label {
+  color: var(--primary);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+#message {
+  border-radius: 10px;
+  height: 150px;
+  border: 1px var(--accent) solid;
+  box-shadow: var(--accent) 0 0 20px;
+}
+#name,
+#email,
+#prenom {
+  border-radius: 20px;
+  height: 25px;
+  border: 1px var(--accent) solid;
+  box-shadow: var(--accent) 0 0 20px;
+}
+#message:focus,
+#name:focus,
+#prenom:focus,
+#email:focus {
+  box-shadow: var(--primary) 0 0 20px;
+}
 @media only screen and (max-width: 768px) {
   main {
     width: 100%;
@@ -254,6 +328,24 @@ footer {
     margin-left: 2%;
     width: 3%;
   }
+  #section6 a {
+    margin-left: 0%;
+    margin-top: -120%;
+  }
+  #section6 {
+    height: 700px;
+  }
+  #contact {
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+  #contact2 {
+    margin: 0;
+  }
+  #reseaux {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -272,5 +364,12 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  footer {
+    margin-left: 0%;
+    width: 100%;
+    background-color: black;
+    text-align: center;
   }
 }
