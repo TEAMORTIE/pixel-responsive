@@ -19,18 +19,24 @@ main {
   background-color: rgba(0, 0, 0, 1);
   width: 70%;
   margin-left: 15%;
+
   overflow-x: hidden;
+}
+
+#chrono {
+  width: 100%;
+  height: 400px;
 }
 p {
   color: var(--secondary);
   font-size: 1em;
   font-family: var(--font3);
 }
+
 #section1 video {
   object-fit: cover;
   width: 96%;
   margin-left: 2%;
-  margin-top: 2%;
   box-shadow: var(--primary) 0 -2px 20px;
 }
 #section1 p {
@@ -224,6 +230,7 @@ footer {
 }
 #formulaire h3 {
   text-align: center;
+  font-size: 2em;
 }
 form label {
   color: var(--primary);
@@ -232,6 +239,8 @@ form {
   display: flex;
   flex-direction: column;
   margin: 2em;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 #message {
   border-radius: 10px;
@@ -345,6 +354,12 @@ form {
   }
   #reseaux {
     justify-content: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
   }
 }
 
