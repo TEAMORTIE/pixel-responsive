@@ -212,8 +212,6 @@ footer {
   margin-top: 2em;
   display: flex;
 }
-#reseaux a {
-}
 #reseaux img {
   width: 50%;
 }
@@ -339,7 +337,7 @@ form {
   }
   #section6 a {
     margin-left: 0%;
-    margin-top: -120%;
+    margin-top: -800px;
   }
   #section6 {
     height: 700px;
