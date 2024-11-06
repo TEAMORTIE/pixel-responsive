@@ -25,7 +25,7 @@ p {
   font-size: 1em;
   font-family: var(--font3);
 }
-#section1 img {
+#section1 video {
   object-fit: cover;
   width: 96%;
   margin-left: 2%;
@@ -151,7 +151,7 @@ button:hover {
   animation: animation 15s linear infinite;
 }
 span {
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 
 #section7 {
@@ -170,6 +170,13 @@ span {
   100% {
     transform: translateY(-1080px);
   }
+}
+
+footer {
+  margin-left: 15%;
+  width: 70%;
+  background-color: black;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -246,5 +253,24 @@ span {
   #section7 img {
     margin-left: 2%;
     width: 3%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  header {
+    position: sticky;
+    top: -16%;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  h3 {
+    font-size: 30px !important;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
