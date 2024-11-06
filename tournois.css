@@ -44,19 +44,36 @@ a button {
 h3 {
   padding-top: 1em;
 }
+#block1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#block2 {
+  grid-column: 2 ;
+  grid-row: 1;
+}
+
+#block3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#block4 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
 #tournois {
-  flex-wrap: wrap;
   margin-top: 2em;
-  display: flex;
-  grid-column: auto;
-  justify-content: space-around;
+  display: grid;
 }
 #tournois img {
   border-radius: 20px;
 
   margin-bottom: 1em;
-  height: 256px;
-  width: 256px;
+  height: 50%;
+  width: 80%;
 }
 .block p {
   font-size: 1.2em;
@@ -66,6 +83,27 @@ h3 {
   margin-bottom: 2em;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .titre {
   font-size: 1.5em !important;
   text-shadow: var(--primary) 0 0 10px;
@@ -75,17 +113,17 @@ h3 {
   margin-top: 5em;
 }
 
-input[type="checkbox"] {
+#reglement input[type="checkbox"] {
   display: none;
 }
 
-label {
+#reglement label {
   background-color: rgba(0, 0, 0, 0.7);
   font-weight: 1000;
   box-shadow: var(--primary) 0 0 20px;
   color: white;
   border: 1px solid var(--primary);
-  padding: 1em 2em;
+  padding: 3% 3%;
   text-align: center;
   font-size: 2em;
   font-family: var(--titre);
@@ -107,8 +145,7 @@ input[type="checkbox"]:checked + label + .text {
 
 .classement {
   margin-top: 5em;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
 }
 h3 {
   font-size: 2em !important;
@@ -122,6 +159,45 @@ h3 {
   height: 150px;
   object-fit: cover;
 }
+#block5 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#block6 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#block7 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#block8 {
+  grid-column: 4;
+  grid-row: 1;
+}
+#block9 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#block10 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#block11 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#block12 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
 
 .classement2 {
   border: 1px var(--primary) solid;
@@ -130,28 +206,189 @@ h3 {
   color: var(--secondary);
 }
 .classementprofil {
-  display: flex;
-  flex-direction: column;
   margin-top: 2em;
   font-size: 0.7em;
   margin-left: 1em;
 }
 .classementprofil strong {
+  
   font-size: 2em;
 }
 .classement2 p {
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
-  #fixed1 {
-    width: 100%;
-    height: 100%;
-  }
+#inscription{
+    font-family: var(--font3);
+}
+#choix{
+  display: flex;
+  margin: 2%;
+}
+#choix input{
+  width: 2.5%;
+  margin-left: 2%;
+}
+#choix label{
+  font-family: var(--font3);
+  margin-left: 2%;
+}
+footer{
+  margin-top: -32px;
+  padding-top: 30px;
 }
 
-@media only screen and (max-width: 960px) {
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 520px) {
   #fixed1 {
     width: 100%;
     height: 100%;
   }
+    #block1 {
+      grid-column: 1 !important;
+      grid-row: 1!important;
+    }
+  
+    #block2 {
+      grid-column: 1!important;
+      grid-row: 2!important;
+    }
+  
+    #block3 {
+      grid-column: 1!important;
+      grid-row: 3!important;
+    }
+  
+    #block4 {
+      grid-column: 1!important;
+      grid-row: 4!important;
+  
+    }
+        #block5 {
+          grid-column: 1 !important;
+          grid-row: 1 !important;
+        }
+    
+        #block6 {
+          grid-column: 1 !important;
+          grid-row: 2 !important;
+        }
+    
+        #block7{
+          grid-column: 1 !important;
+          grid-row: 3 !important;
+        }
+    
+        #block8{
+          grid-column: 1 !important;
+          grid-row: 4 !important;
+    
+        }
+                #block9 {
+                  grid-column: 1 !important;
+                  grid-row: 1 !important;
+                }
+        
+                #block10 {
+                  grid-column: 1 !important;
+                  grid-row: 2 !important;
+                }
+        
+                #block11 {
+                  grid-column: 1 !important;
+                  grid-row: 3 !important;
+                }
+        
+                #block12 {
+                  grid-column: 1 !important;
+                  grid-row: 4 !important;
+        
+                }
+    #reglement label {
+      font-size: 1em;
+    }
+    #choix label{
+          font-size: 0.8em;
+    }
+    
+}
+
+@media only screen and (max-width: 960px ) {
+  #fixed1 {
+    width: 100%;
+    height: 100%;
+  }
+    #block1 {
+      grid-column: 1 / 2;
+      grid-row: 1;
+    }
+  
+    #block2 {
+      grid-column: 2 / 2;
+            grid-row: 1;
+    }
+  
+    #block3 {
+      grid-column: 1 / 2;
+            grid-row: 2;
+    }
+  
+    #block4 {
+      grid-column: 2 / 2;
+              grid-row: 2;
+    }
+        #tournois {
+          flex-wrap: wrap;
+          margin-top: 2em;
+          display: grid;
+        }
+
+                #reglement label {
+                  font-size: 1.5em;
+                }
+        #block5 {
+          grid-column: 1 / 2;
+          grid-row: 1;
+        }
+    
+        #block6 {
+          grid-column: 2 / 2;
+          grid-row: 1;
+        }
+    
+        #block7 {
+          grid-column: 1 / 2;
+          grid-row: 2;
+        }
+    
+        #block8 {
+          grid-column: 2 / 2;
+          grid-row: 2;
+        }
+                #block9 {
+                  grid-column: 1 / 2;
+                  grid-row: 1;
+                }
+        
+                #block10 {
+                  grid-column: 2 / 2;
+                  grid-row: 1;
+                }
+        
+                #block11 {
+                  grid-column: 1 / 2;
+                  grid-row: 2;
+                }
+        
+                #block12 {
+                  grid-column: 2 / 2;
+                  grid-row: 2;
+                }
 }

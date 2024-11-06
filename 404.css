@@ -1,0 +1,59 @@
+body {
+    background-color: #111;
+    color: #00ffcc;
+    font-family: "Press Start 2P", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #ff0033;
+    text-shadow: 2px 2px 0 #333;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.glitch {
+    position: relative;
+    color: #00ffcc;
+    display: inline-block;
+}
+
+.glitch:before,
+.glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch:before {
+    color: #ff00ff;
+    z-index: -1;
+    transform: translate(-2px, -2px);
+}
+
+.glitch:after {
+    color: #00ccff;
+    z-index: -2;
+    transform: translate(2px, 2px);
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff0033;
+}

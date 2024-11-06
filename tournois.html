@@ -37,30 +37,31 @@
         <img src="images/logo1.png" alt="" />
         <h2>Back To Pixel</h2>
       </div>
-      <nav>
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" id="menu"
-          ><img src="images/burger.svg" alt="menu"
-        /></label>
-
-        <a class="menu2" href="index.html">Accueil</a>
-        <a class="menu2" href="">Tournois</a>
-        <a class="menu2" href="">Exposition <br />Consoles</a>
-        <a class="menu2" href="">Histoire <br />Nintendo</a>
-        <a class="menu2" href="">Shigeru <br />Miyamoto</a>
-
-        <div class="menu2" id="dropdown">
-          <p id="autres" href="">Autres</p>
-          <div class="submenu">
-            <a href="">Atelier et Activité</a>
-            <a href="">Programme Festival</a>
-            <a href="">Partenaire et Sponsors</a>
-            <a href="">Boutique de Produit Dérivé</a>
-            <a href="">Accreditations Presse et Médias</a>
-          </div>
-        </div>
-      </nav>
     </header>
+
+    <nav>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="menu"
+        ><img src="images/burger.svg" alt="menu"
+      /></label>
+
+      <a class="menu2" href="index.html">Accueil</a>
+      <a class="menu2" href="">Tournois</a>
+      <a class="menu2" href="">Exposition <br />Consoles</a>
+      <a class="menu2" href="">Histoire <br />Nintendo</a>
+      <a class="menu2" href="">Shigeru <br />Miyamoto</a>
+
+      <div class="menu2" id="dropdown">
+        <p id="autres" href="">Autres</p>
+        <div class="submenu">
+          <a href="">Atelier et Activité</a>
+          <a href="">Programme Festival</a>
+          <a href="">Partenaire et Sponsors</a>
+          <a href="">Boutique de Produit Dérivé</a>
+          <a href="">Accreditations Presse et Médias</a>
+        </div>
+      </div>
+    </nav>
     <main>
       <img id="fixed1" src="images/retro.jpg" alt="" />
       <div id="slogan">
@@ -73,32 +74,32 @@
       <div id="main">
         <h3>Les Tournois</h3>
         <div id="tournois">
-          <div class="block">
+          <div class="block" id="block1">
             <img src="images/mario.jpg" alt="" />
             <p class="titre">Tournois Mario</p>
             <p>Horaire : 15h50</p>
 
-            <a href=""><button>S'inscrire</button></a>
+            <a href="#inscription"><button>S'inscrire</button></a>
           </div>
-          <div class="block">
+          <div class="block" id="block2">
             <img src="images/tetris.png" alt="" />
             <p class="titre">Tournois Tetris</p>
             <p>Horaire : 10h15</p>
 
-            <a href=""><button>S'inscrire</button></a>
+            <a href="#inscription"><button>S'inscrire</button></a>
           </div>
-          <div class="block">
+          <div class="block" id="block3">
             <img src="images/street.jpg" alt="" />
             <p class="titre">Tournois Street fighter</p>
             <p>Horaire : 14h30</p>
 
-            <a href=""><button>S'inscrire</button></a>
+            <a href="#inscription"><button>S'inscrire</button></a>
           </div>
-          <div class="block">
+          <div class="block" id="block4">
             <img src="images/boomberman.png" alt="" />
             <p class="titre">Tournois Boomberman</p>
             <p>Horaire : 13h</p>
-            <a href=""><button>S'inscrire</button></a>
+            <a href="#inscription"><button>S'inscrire</button></a>
           </div>
         </div>
         <div id="reglement">
@@ -167,7 +168,7 @@
         <h3 class="titreclassement">Resultat</h3>
 
         <div class="classement">
-          <div class="block">
+          <div class="block" id="block5">
             <p>Gagnant de</p>
 
             <p><strong>mario</strong></p>
@@ -175,7 +176,7 @@
             <p><strong>Dieu Donné</strong></p>
             <p>Score: 149point</p>
           </div>
-          <div class="block">
+          <div class="block" id="block6">
             <p>Gagnant de</p>
 
             <p><strong>Tetris</strong></p>
@@ -183,14 +184,14 @@
             <p><strong>Nathalie Edert</strong></p>
             <p>Score: 108points</p>
           </div>
-          <div class="block">
+          <div class="block" id="block7">
             <p>Gagnant de</p>
             <p><strong>Street fighter</strong></p>
             <img class="profil" src="images/profil4.jpg" alt="" />
             <p><strong>Yvick Letexier</strong></p>
             <p>Score: 182points</p>
           </div>
-          <div class="block">
+          <div class="block" id="block8">
             <p>Gagnant de</p>
             <p><strong>Boomberman</strong></p>
             <img class="profil" src="images/profil3.jpg" alt="" />
@@ -200,21 +201,21 @@
         </div>
         <h3 class="titreclassement">classement</h3>
         <div class="classement">
-          <div class="classement2">
+          <div class="classement2" id="block9">
             <p><strong>Classement Mario</strong></p>
             <div class="classementprofil">
               1. <strong>Dieu Donné</strong> 149Points
             </div>
 
             <div class="classementprofil">
-              2. <strong>PixelWizard82</strong> 146Points
+              2. <strong>CosmicVoyager7</strong> 146Points
             </div>
             <div class="classementprofil">
               3. <strong>RetroNinja99</strong> 130points
             </div>
 
             <div class="classementprofil">
-              4. <strong>CosmicVoyager7</strong> 125points
+              4. <strong>Yvick Aka mister v </strong> 125points
             </div>
 
             <div class="classementprofil">
@@ -222,21 +223,21 @@
             </div>
           </div>
 
-          <div class="classement2">
+          <div class="classement2" id="block10">
             <p><strong>Classement Tetris</strong></p>
             <div class="classementprofil">
-              1. <strong>Dieu Donné</strong> 149Points
+              1. <strong>Nathalie Edert</strong> 149Points
             </div>
 
             <div class="classementprofil">
-              2. <strong>PixelWizard82</strong> 146Points
+              2. <strong>RetroNinja99</strong> 146Points
             </div>
             <div class="classementprofil">
-              3. <strong>RetroNinja99</strong> 130points
+              3. <strong>Yvick </strong> 130points
             </div>
 
             <div class="classementprofil">
-              4. <strong>CosmicVoyager7</strong> 125points
+              4. <strong>Dieu Donné</strong> 125points
             </div>
 
             <div class="classementprofil">
@@ -244,10 +245,10 @@
             </div>
           </div>
 
-          <div class="classement2">
+          <div class="classement2" id="block11">
             <p><strong>Classement street fighter</strong></p>
             <div class="classementprofil">
-              1. <strong>Dieu Donné</strong> 149Points
+              1. <strong>Yvick Letexier</strong> 149Points
             </div>
 
             <div class="classementprofil">
@@ -258,22 +259,22 @@
             </div>
 
             <div class="classementprofil">
-              4. <strong>CosmicVoyager7</strong> 125points
+              4. <strong>Dieu Donné</strong> 125points
             </div>
 
             <div class="classementprofil">
-              5. <strong>NeonNovaX</strong> 111points
+              5. <strong>CosmicVoyager7</strong> 111points
             </div>
           </div>
 
-          <div class="classement2">
+          <div class="classement2" id="block12">
             <p><strong>Classement Boomberman</strong></p>
             <div class="classementprofil">
-              1. <strong>Dieu Donné</strong> 149Points
+              1. <strong>Antonio Da Costa</strong> 149Points
             </div>
 
             <div class="classementprofil">
-              2. <strong>PixelWizard82</strong> 146Points
+              2. <strong>Dieu donné</strong> 146Points
             </div>
             <div class="classementprofil">
               3. <strong>RetroNinja99</strong> 130points
@@ -289,7 +290,43 @@
           </div>
         </div>
         <h3>Inscrivez vous</h3>
+        <div id="inscription">
+          <form action="https://formspree.io/f/xpwzdplj" method="post">
+            <label for="name">Prénom :</label>
+            <input type="text" id="prenom" name="prénom" required />
+
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+            <div id="choix">
+              <input type="checkbox" name="mario" id="mario" />
+              <label for="mario">Tournoi Mario</label>
+
+              <input type="checkbox" name="street" id="street" />
+
+              <label for="street">Tournoi street fighter</label>
+              <input type="checkbox" name="tetris" id="tetris" />
+
+              <label for="tetris">Tournoi tetris</label>
+
+              <input type="checkbox" name="boomberman" id="boomberman" />
+
+              <label for="boomberman">Tournoi boomberman</label>
+            </div>
+
+            <button type="submit">S'inscrire</button>
+          </form>
+        </div>
       </div>
     </main>
+
+    <footer>
+      <p>
+        ⒸBack To Pixel - 2024- <a href="mention">Mention Légal</a>
+        <a href="index.html#contact">Contact</a>
+      </p>
+    </footer>
   </body>
 </html>

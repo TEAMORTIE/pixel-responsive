@@ -11,12 +11,16 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font2);
 }
-header {
+nav {
+  z-index: 2;
   position: sticky;
-  top: -18%;
+  top: 0;
 }
 
 #nav-supp {
@@ -118,12 +122,10 @@ header {
 #dropdown:hover .submenu {
   display: block;
 }
-/* Cacher la case à cocher */
 #menu-toggle {
   display: none;
 }
 
-/* Style du bouton Menu en version mobile */
 #menu {
   display: none; /* Par défaut, masqué sur les écrans de bureau */
   padding: 15px;
@@ -150,10 +152,6 @@ header {
     font-size: 10px !important;
   }
 
-  header {
-    position: sticky;
-    top: -100% !important;
-  }
   h2 {
     font-size: 50%;
   }
