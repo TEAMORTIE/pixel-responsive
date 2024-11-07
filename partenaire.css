@@ -1,0 +1,167 @@
+body {
+  background-image: url("images/wp2494960.png");
+  background-position: 50% 50%;
+  background-size: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --text: rgb(165, 202, 207);
+  --background: #f9fefc;
+  --primary: #d82622;
+  --secondary: #8198e9;
+  --accent: #6f59e2;
+  --titre: "Press Start 2P", system-ui;
+  --font2: "Roboto Slab", serif;
+}
+main {
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  color: #f9fefc;
+  width: 80%;
+  margin-left: 10%;
+}
+
+h3 {
+  font-family: var(--titre);
+  color: var(--primary);
+  font-size: 3em;
+  padding-top: 4%;
+}
+p {
+  font-family: var(--font2);
+  color: var(--secondary);
+  text-align: center;
+  margin-left: 2%;
+  padding-left: 2%;
+  font-size: 1.3em;
+}
+.part {
+  padding-top: 5%;
+  text-align: left;
+}
+.nos {
+  display: flex;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.micro {
+  width: 100%;
+}
+.need {
+  width: 100%;
+  height: 28%;
+  object-fit: cover;
+}
+.nord {
+  width: 75%;
+  margin-left: 10%;
+}
+.part:hover .defile {
+  height: 100%;
+}
+footer {
+  padding-top: 15%;
+  margin-left: 15%;
+  width: 70%;
+  background-color: black;
+  text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+  h3 {
+    font-family: var(--titre);
+    color: var(--primary);
+    font-size: 3em;
+    padding-top: 4%;
+    margin-top: 4%;
+  }
+  p {
+    font-family: var(--font2);
+    color: var(--secondary);
+    margin-left: 2%;
+    padding-left: 2%;
+    font-size: 1.3em;
+  }
+  .part {
+    padding-top: 5%;
+    text-align: left;
+  }
+  .nos {
+    display: flex;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .micro {
+    width: 100%;
+  }
+  .need {
+    width: 100%;
+    height: 28%;
+  }
+  .nord {
+    width: 75%;
+    margin-left: 10%;
+  }
+  .part:hover .defile {
+    height: 100%;
+  }
+  footer {
+    padding-top: 30%;
+    margin-left: 15%;
+    width: 70%;
+    background-color: black;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-family: var(--titre);
+    color: var(--primary);
+    font-size: 1.7em;
+    padding-top: 4%;
+  }
+  p {
+    font-family: var(--font2);
+    color: var(--secondary);
+    margin-left: 2%;
+    padding-left: 2%;
+    margin-right: 3%;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .part {
+    padding-top: 5%;
+    text-align: left;
+  }
+  .nos {
+    display: inline;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .micro {
+    width: 100%;
+  }
+  .need {
+    width: 80%;
+    height: 28%;
+    margin-left: 9%;
+  }
+  .nord {
+    width: 75%;
+    margin-left: 10%;
+  }
+  .part:hover .defile {
+    height: 100%;
+  }
+  footer {
+    padding-top: 30%;
+    margin-left: 15%;
+    width: 70%;
+    background-color: black;
+    text-align: center;
+  }
+}
