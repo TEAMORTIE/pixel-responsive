@@ -1,16 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <link rel="stylesheet" href="accreditation.css" />
-    <title>Accréditaton Presse et Médias</title>
+    <meta
+      name="description"
+      content="Rejoignez le Back to Pixel Festival, l'événement incontournable pour les passionnés de rétro-gaming, de jeux vidéo vintage, et de culture rétro. Découvrez des consoles emblématiques, des jeux cultes, participez à des tournois, des conférences passionnantes et explorez un marché de produits rétro uniques. Ce festival est l'occasion de rencontrer d'autres amateurs de gaming, d'assister à des ateliers interactifs, et de revivre les classiques du jeu vidéo. Ne manquez pas cette expérience unique et plongez dans l'univers du rétro avec Back to Pixel Festival, en Rouen du 30/11 ."
+    />
+    <meta
+      property="og:title"
+      content="Back to Pixel Festival - Événement Rétro-Gaming - Accreditations media Photographie"
+    />
+    <meta
+      property="og:description"
+      content="Rejoignez le Back to Pixel Festival pour plonger dans l'univers du rétro-gaming et découvrir des jeux cultes."
+    />
+    <meta
+      property="og:url"
+      content="https://teamortie.github.io/pixel-responsive/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accreditations media</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab:wght@100..900&display=swap");
     </style>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab:wght@100..900&family=Teko:wght@300..700&display=swap");
     </style>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="accreditation.css" />
   </head>
   <body>
+    <header>
+      <div id="nav-supp">
+        <h1>Back To Pixel Festival</h1>
+      </div>
+      <div id="nav-middle">
+        <img
+          onclick="window.location.href='index.html'"
+          src="images/logo1.png"
+          alt=""
+        />
+        <h2 onclick="window.location.href='index.html'">Back To Pixel</h2>
+      </div>
+    </header>
+
+    <nav>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="menu"
+        ><img src="images/burger.svg" alt="menu"
+      /></label>
+
+      <a class="menu2" href="index.html">Accueil</a>
+      <a class="menu2" href="tournois.html">Tournois</a>
+      <a class="menu2" href="exposition.html">Exposition <br />Consoles</a>
+      <a class="menu2" href="histoire.html">Histoire <br />Nintendo</a>
+      <a class="menu2" href="rencontre.html">Shigeru <br />Miyamoto</a>
+
+      <div class="menu2" id="dropdown">
+        <p id="autres" href="">Autres</p>
+        <div class="submenu">
+          <a href="atelier.html">Atelier et Activité</a>
+          <a href="programme.html">Programme Festival</a>
+          <a href="Partenaire.html">Partenaire et Sponsors</a>
+          <a href="boutique.html">Boutique de Produit Dérivé</a>
+          <a href="accreditation.html">Accreditations Presse et Médias</a>
+          <a href="https://teamortie.github.io/BACKTOPIXELL">Site Officel </a>
+        </div>
+      </div>
+    </nav>
+
+    <a id="fix" href="#nav-supp"
+      ><button><img src="images/fleche.png" alt="" /></button
+    ></a>
     <main>
       <h3>Accréditaton Presse et Médias</h3>
       <p>
@@ -37,26 +114,58 @@
           zone backstage, plateforme photo).
         </li>
         <h4>Formulaire:</h4>
-      
       </ul>
-      <form>
-          <p>Information personnel</p>
-        <label>*Nom :<input type="" required placeholder="Votre nom..."></label>
-      <label>*Prénom :<input type="" required placeholder="Votre Prénom..."></label>
-      </br>
-    </br>
-        <label>*Votre email :<input type="email" required placeholder="Votre email..."></label>
-        <label>Votre Numéro :<input type="number" required placeholder="Votre Numero..."></label>
-        <p>Informations professionnelles </p>
-        <label>*Votre Média<input type="text" required placeholder="Votre Média..."></label>
-        <label>*Quelle est votre type de média :<input type="text" required placeholder="..."></label>
-  </br>
-</br>
-  <button>Envoyer</button>
-      </form>
-      <footer>
-        <p>ⒸBack To Pixel - 2024- <a href="mention">Mention Légal</a></p>
-      </footer>
+      <h4>Formulaire:</h4>
+      <div class="form-container">
+        <form action="https://formspree.io/f/ton-identifiant" method="POST">
+          <label for="fullName">Nom Complet:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">Adresse Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mediaOrganization">Organisation Média:</label>
+          <input
+            type="text"
+            id="mediaOrganization"
+            name="mediaOrganization"
+            required
+          />
+
+          <label for="jobTitle">Fonction:</label>
+          <input type="text" id="jobTitle" name="jobTitle" required />
+
+          <label for="phone">Numéro de téléphone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="website">Site Web de l'Organisation:</label>
+          <input type="url" id="website" name="website" required />
+
+          <label for="coverage">Type de Couverture:</label>
+          <textarea id="coverage" name="coverage" required></textarea>
+
+          <label for="previousEvents">Avez-vous déjà couvert cet événement ?</label>
+          <textarea id="previousEvents" name="previousEvents"></textarea>
+
+          <label for="socialMedia">Liens vers vos profils sociaux:</label>
+          <input type="url" id="socialMedia" name="socialMedia" />
+
+          <label for="accreditationPurpose">Pourquoi souhaitez-vous une accréditation ?</label>
+          <textarea id="accreditationPurpose" name="accreditationPurpose" required></textarea>
+
+          <button type="submit">Soumettre</button>
+        </form>
+      </div>
+    </main>
+
+<footer>
+      <p>
+        ⒸBack To Pixel - 2024- Tout droit réservé-<a href="mention.html"
+          >Mention Légal </a
+        >- <a href="index.html#contact">Contact</a> --
+        <a href="#nav-supp">Navigation </a>
+      </p>
+    </footer>
     </main>
   </body>
 </html>
