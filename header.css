@@ -26,6 +26,11 @@ nav p {
   color: black !important;
 }
 
+#nav-middle img,
+#nav-middle h2 {
+  cursor: pointer;
+}
+
 #nav-supp {
   width: 100%;
   font-family: var(--titre);
