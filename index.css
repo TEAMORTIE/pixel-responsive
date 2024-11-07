@@ -158,6 +158,9 @@ button:hover {
 span {
   font-size: 0.9em;
 }
+#chrono2 {
+  display: none;
+}
 
 #section7 {
   display: flex;
@@ -259,6 +262,15 @@ form {
   box-shadow: var(--primary) 0 0 20px;
 }
 @media only screen and (max-width: 768px) {
+  #chrono2 {
+    display: block;
+  }
+  #chrono {
+    display: none;
+  }
+  video {
+    margin-top: 1em;
+  }
   main {
     width: 100%;
     margin: 0;

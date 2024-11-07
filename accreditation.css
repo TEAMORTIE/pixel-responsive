@@ -1,0 +1,76 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-image: url("images/presse.jpg");
+    background-size: 100%;
+        color:#6f59e2;
+     
+}
+:root {
+    --text: rgb(165, 202, 207);
+    --primary: #d82622;
+    --secondary: #8198e9;
+    --accent: #6f59e2;
+    --titre: "Press Start 2P", system-ui;
+    --font3: "Teko", sans-serif;
+  }
+main{
+    background-color: black;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    padding-bottom: 0.2%;
+}
+h3{
+    color: #d82622;
+    font-family: var(--titre);
+    padding-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h4{
+    color: #8198e9;
+    font-family: var(--titre);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+p {
+    font-family: var(--font3);
+    font-size: 130%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+ul li{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+strong{
+    color:#d82622;
+}
+form{
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 1%;
+}
+#pot{
+    transform: none;
+}
+footer {
+    margin-left: 15%;
+    width: 70%;
+    background-color: black;
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px){
+    form{
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 100%;
+    }
+   input{
+    font-size: 70%;
+   text-align: center;
+   }
+  }

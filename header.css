@@ -17,6 +17,9 @@ html {
 body {
   font-family: var(--font2);
 }
+main {
+  overflow-wrap: anywhere;
+}
 nav {
   z-index: 2;
   position: sticky;
@@ -270,6 +273,11 @@ header {
   }
 }
 @media only screen and (max-width: 960px) {
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   footer {
     margin-left: 0%;
     width: 100%;

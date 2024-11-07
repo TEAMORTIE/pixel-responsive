@@ -1,0 +1,176 @@
+body{
+    background-image: url("images/mario.png");
+    background-size: 100%;
+    background-position: 50% 50%;
+    width: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+
+}
+
+main{
+    background-color: rgba(0,0,0,1);
+    text-align: center;
+    color: #f9fefc;
+    width: 80%;
+    margin-left: 10%;
+}
+h3{
+    font-size: 2em;
+    color: var(--primary);
+    font-family: var(--titre);
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+.img1{
+    display: flex;
+}
+.super{
+    width: 20%;
+    object-fit: cover;
+    padding-top: 2%;
+    margin-left: 2%;
+}
+p {
+    text-align: center;
+    padding-top: 6%;
+    color: var(--secondary);
+    font-family: var(--font3);
+    font-size: 1.6em;
+}
+.envoyer{
+    margin-top: 23%;
+    text-decoration: none;
+    font-family: var(--font3);
+    color: var(--secondary);
+    margin-right: 10%;
+    padding: 1%;
+    font-size: 2.2em;
+    border: 3px solid var(--primary);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.zelda{
+    width: 15%;
+    margin-left: 5%;
+}
+
+footer {
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 10%;
+    background-color: black;
+    text-align: center;
+}
+@media only screen and (max-width: 960px) {
+    h3{
+        font-size: 2em;
+        color: var(--primary);
+        font-family: var(--titre);
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+    }
+    .img1{
+        display: flex;
+    }
+    .super{
+        width: 26%;
+        object-fit: cover;
+        padding-top: 2%;
+        margin-left: 2%;
+    }
+    p {
+        text-align: center;
+        padding-top: 6%;
+        color: var(--secondary);
+        font-family: var(--font3);
+        font-size: 1.6em;
+    }
+    .envoyer{
+        margin-top: 50%;
+        text-decoration: none;
+        font-family: var(--font3);
+        color: var(--secondary);
+        margin-right: 10%;
+        padding: 1%;
+        font-size: 2.2em;
+        border: 3px solid var(--primary);
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: black;
+    }
+
+    footer {
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 20%;
+        background-color: black;
+        text-align: center;
+    }
+
+}
+@media only screen  and ( max-width: 768px) {
+    h3{
+        font-size: 2em;
+        color: var(--primary);
+        font-family: var(--titre);
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+    }
+    .img1{
+        display: inline;
+
+    }
+    .super{
+        width: 70%;
+        object-fit: cover;
+        padding-top: 2%;
+        margin-left: 2%;
+    }
+    p {
+        text-align: center;
+        padding-top: 6%;
+        color: var(--secondary);
+        font-family: var(--font3);
+        font-size: 1.6em;
+    }
+    .envoyer{
+        margin-top:1% ;
+        margin-bottom: 10%;
+        text-decoration: none;
+        font-family: var(--font3);
+        color: var(--secondary);
+        margin-left: 8%;
+        padding: 1%;
+        font-size: 2.2em;
+        border: 3px solid var(--primary);
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: black;
+    }
+    .zelda{
+        width: 40%;
+    }
+    a{
+        display: block;
+    }
+
+
+    footer {
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 20%;
+        background-color: black;
+        text-align: center;
+    }
+
+
+
+}
