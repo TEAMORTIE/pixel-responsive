@@ -26,6 +26,27 @@ nav p {
   color: black !important;
 }
 
+#fix {
+  position: fixed;
+  bottom: 2em !important;
+  right: 2em !important;
+  width: 10% !important;
+}
+#fix button {
+  border: none;
+  box-shadow: none;
+  background: none;
+  transition: 0.3s all ease;
+}
+#fix button img {
+  width: 100% !important;
+  cursor: pointer;
+}
+#fix button:hover {
+  box-shadow: none;
+  padding: 0;
+}
+
 #nav-middle img,
 #nav-middle h2 {
   cursor: pointer;
@@ -155,6 +176,12 @@ header {
   border: none;
 }
 @media only screen and (max-width: 768px) {
+  #fix {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 100px;
+  }
   embed {
     width: 90%;
     margin-left: 5%;
