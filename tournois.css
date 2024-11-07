@@ -50,7 +50,11 @@ h3 {
 }
 
 #block2 {
+<<<<<<< HEAD
   grid-column: 2;
+=======
+  grid-column: 2 ;
+>>>>>>> 227b2af8a569836454733ed88a68b9f77c652ef2
   grid-row: 1;
 }
 
@@ -84,6 +88,29 @@ h3 {
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 227b2af8a569836454733ed88a68b9f77c652ef2
 .titre {
   font-size: 1.5em !important;
   text-shadow: var(--primary) 0 0 10px;
@@ -177,6 +204,10 @@ h3 {
   grid-column: 4;
   grid-row: 1;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 227b2af8a569836454733ed88a68b9f77c652ef2
 
 .classement2 {
   border: 1px var(--primary) solid;
@@ -190,11 +221,13 @@ h3 {
   margin-left: 1em;
 }
 .classementprofil strong {
+  
   font-size: 2em;
 }
 .classement2 p {
   text-align: center;
 }
+<<<<<<< HEAD
 #inscription {
   font-family: var(--font3);
 }
@@ -283,13 +316,43 @@ footer {
   #choix label {
     font-size: 0.8em;
   }
+=======
+#inscription{
+    font-family: var(--font3);
+}
+#choix{
+  display: flex;
+  margin: 2%;
+}
+#choix input{
+  width: 2.5%;
+  margin-left: 2%;
+}
+#choix label{
+  font-family: var(--font3);
+  margin-left: 2%;
+}
+footer{
+  margin-top: -32px;
+  padding-top: 30px;
+>>>>>>> 227b2af8a569836454733ed88a68b9f77c652ef2
 }
 
-@media only screen and (max-width: 960px) {
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 520px) {
   #fixed1 {
     width: 100%;
     height: 100%;
   }
+<<<<<<< HEAD
   #block1 {
     grid-column: 1 / 2;
     grid-row: 1;
@@ -356,4 +419,146 @@ footer {
     grid-column: 2 / 2;
     grid-row: 2;
   }
+=======
+    #block1 {
+      grid-column: 1 !important;
+      grid-row: 1!important;
+    }
+  
+    #block2 {
+      grid-column: 1!important;
+      grid-row: 2!important;
+    }
+  
+    #block3 {
+      grid-column: 1!important;
+      grid-row: 3!important;
+    }
+  
+    #block4 {
+      grid-column: 1!important;
+      grid-row: 4!important;
+  
+    }
+        #block5 {
+          grid-column: 1 !important;
+          grid-row: 1 !important;
+        }
+    
+        #block6 {
+          grid-column: 1 !important;
+          grid-row: 2 !important;
+        }
+    
+        #block7{
+          grid-column: 1 !important;
+          grid-row: 3 !important;
+        }
+    
+        #block8{
+          grid-column: 1 !important;
+          grid-row: 4 !important;
+    
+        }
+                #block9 {
+                  grid-column: 1 !important;
+                  grid-row: 1 !important;
+                }
+        
+                #block10 {
+                  grid-column: 1 !important;
+                  grid-row: 2 !important;
+                }
+        
+                #block11 {
+                  grid-column: 1 !important;
+                  grid-row: 3 !important;
+                }
+        
+                #block12 {
+                  grid-column: 1 !important;
+                  grid-row: 4 !important;
+        
+                }
+    #reglement label {
+      font-size: 1em;
+    }
+    #choix label{
+          font-size: 0.8em;
+    }
+    
+}
+
+@media only screen and (max-width: 960px ) {
+  #fixed1 {
+    width: 100%;
+    height: 100%;
+  }
+    #block1 {
+      grid-column: 1 / 2;
+      grid-row: 1;
+    }
+  
+    #block2 {
+      grid-column: 2 / 2;
+            grid-row: 1;
+    }
+  
+    #block3 {
+      grid-column: 1 / 2;
+            grid-row: 2;
+    }
+  
+    #block4 {
+      grid-column: 2 / 2;
+              grid-row: 2;
+    }
+        #tournois {
+          flex-wrap: wrap;
+          margin-top: 2em;
+          display: grid;
+        }
+
+                #reglement label {
+                  font-size: 1.5em;
+                }
+        #block5 {
+          grid-column: 1 / 2;
+          grid-row: 1;
+        }
+    
+        #block6 {
+          grid-column: 2 / 2;
+          grid-row: 1;
+        }
+    
+        #block7 {
+          grid-column: 1 / 2;
+          grid-row: 2;
+        }
+    
+        #block8 {
+          grid-column: 2 / 2;
+          grid-row: 2;
+        }
+                #block9 {
+                  grid-column: 1 / 2;
+                  grid-row: 1;
+                }
+        
+                #block10 {
+                  grid-column: 2 / 2;
+                  grid-row: 1;
+                }
+        
+                #block11 {
+                  grid-column: 1 / 2;
+                  grid-row: 2;
+                }
+        
+                #block12 {
+                  grid-column: 2 / 2;
+                  grid-row: 2;
+                }
+>>>>>>> 227b2af8a569836454733ed88a68b9f77c652ef2
 }
