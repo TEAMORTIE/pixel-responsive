@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -67,6 +67,15 @@ nav {
 }
 #menu {
   display: none;
+}
+
+footer {
+  padding-top: 2%;
+  margin-left: 15%;
+  width: 70%;
+  background-color: black;
+  text-align: center;
+  font-size: 0.8em;
 }
 nav a {
   text-decoration: none;
@@ -127,7 +136,7 @@ header {
 }
 
 #menu {
-  display: none; /* Par défaut, masqué sur les écrans de bureau */
+  display: none;
   padding: 15px;
   font-family: var(--titre);
   font-size: 1rem;
@@ -138,6 +147,11 @@ header {
   border: none;
 }
 @media only screen and (max-width: 768px) {
+  embed {
+    width: 90%;
+    margin-left: 5%;
+    height: 400px;
+  }
   h1 {
     font-size: 100%;
   }
@@ -218,5 +232,13 @@ header {
     display: grid;
     gap: 0.5rem;
     justify-items: center;
+  }
+}
+@media only screen and (max-width: 960px) {
+  footer {
+    margin-left: 0%;
+    width: 100%;
+    background-color: black;
+    text-align: center;
   }
 }
