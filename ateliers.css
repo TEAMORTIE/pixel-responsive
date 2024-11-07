@@ -1,0 +1,134 @@
+body {
+  background-image: url(https://cdn.discordapp.com/attachments/1302975607126364221/1303271947823747092/mario.png?ex=672c7795&is=672b2615&hm=3cb446918d0b41b5196393ca36be67f8f000cddcc9957ab22a8856f1735179cb&);
+  color: rgb(165, 202, 207);
+}
+
+h3 {
+  color: #d82622;
+  font-family: "Press Start 2P";
+  font-size: 220%;
+}
+
+h4 {
+  color: #8198e9;
+  font-size: 2em;
+  font-family: "Teko", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+main {
+  background-color: rgb(0, 0, 0);
+  width: 80%;
+  margin-left: 10%;
+}
+
+.par {
+  color: #6f59e2;
+  font-family: "Teko", sans-serif;
+}
+
+img {
+  width: 20%;
+}
+
+@media only screen and (max-width: 960px) {
+  h3 {
+    font-family: "Press Start 2P";
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 3em;
+    color: #d82622;
+  }
+  .par {
+    margin-left: 5%;
+    font-size: 150%;
+    margin-right: 5%;
+    color: #8198e9;
+    font-family: "Teko", sans-serif;
+  }
+  h4 {
+    margin-left: 5%;
+    font-size: 160%;
+    margin-right: 5%;
+    color: #8198e9;
+    font-family: "Teko", sans-serif;
+  }
+  ul {
+    margin-left: 5%;
+    font-size: 120%;
+    margin-right: 5%;
+    color: #6f59e2;
+    font-family: "Teko", sans-serif;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  h3 {
+    font-family: "Press Start 2P";
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 1em;
+    color: #d82622;
+  }
+  .par {
+    margin-left: 5%;
+    font-size: 150%;
+    margin-right: 5%;
+    color: #8198e9;
+    font-family: "Teko", sans-serif;
+  }
+  h4 {
+    margin-left: 5%;
+    font-size: 160%;
+    margin-right: 5%;
+    color: #8198e9;
+    font-family: "Teko", sans-serif;
+  }
+  ul {
+    margin-left: 5%;
+    font-size: 120%;
+    margin-right: 5%;
+    color: #6f59e2;
+    font-family: "Teko", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  h3 {
+    font-family: "Press Start 2P";
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 1em;
+    color: #d82622;
+  }
+  .par {
+    margin-left: 5%;
+    font-size: 150%;
+    margin-right: 5%;
+    color: #8198e9;
+    font-family: "Teko", sans-serif;
+  }
+  h4 {
+    margin-left: 5%;
+    font-size: 160%;
+    margin-right: 5%;
+    color: #8198e9;
+    font-family: "Teko", sans-serif;
+  }
+  ul {
+    margin-left: 5%;
+    font-size: 120%;
+    margin-right: 5%;
+    color: #6f59e2;
+    font-family: "Teko", sans-serif;
+  }
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}

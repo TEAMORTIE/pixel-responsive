@@ -22,6 +22,9 @@ nav {
   position: sticky;
   top: 0;
 }
+nav p {
+  color: black !important;
+}
 
 #nav-supp {
   width: 100%;

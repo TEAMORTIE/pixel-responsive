@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/fond.webp");
+  background-image: url("images/fond.png");
   width: 100%;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -119,6 +119,7 @@ body p {
   margin-right: 10%;
 }
 .premier img {
+  height: 100%;
   width: 15%;
 }
 
@@ -145,7 +146,7 @@ footer {
   width: 70% !important;
   margin-left: 15% !important;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 760px) {
   footer {
     width: 100% !important;
     margin-left: 0% !important;
@@ -186,7 +187,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 450px) {
   .image2 {
     display: inline;
   }
