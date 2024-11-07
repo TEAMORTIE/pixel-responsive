@@ -1,0 +1,260 @@
+body {
+  background-image: url("images/fond.webp");
+  width: 100%;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  padding: 0;
+  margin: 0;
+  color: #8198e9;
+}
+main {
+  overflow-wrap: anywhere;
+  background-color: rgba(0, 0, 0);
+  width: 70%;
+  margin-left: 15%;
+  font-family: var(--font3);
+  text-align: center;
+}
+h3,
+h4,
+h5 {
+  font-family: var(--titre);
+}
+:root {
+  --text: rgb(165, 202, 207);
+  --primary: #d82622;
+  --secondary: #8198e9;
+  --accent: #6f59e2;
+  --titre: "Press Start 2P", system-ui;
+  --font3: "Teko", sans-serif;
+}
+.titre {
+  color: #d82622;
+}
+#histoire {
+  width: 45%;
+  height: 50%;
+}
+.image2 {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: rgb(165, 202, 207);
+}
+#image3 {
+  display: flex;
+}
+.console {
+  width: 20%;
+}
+.cp {
+  display: inline-block;
+
+  border-radius: 3em;
+}
+#personnage {
+  width: 100%;
+}
+h3 {
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  margin-bottom: 0%;
+}
+
+img {
+  cursor: pointer;
+}
+
+.defile {
+  display: block;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  position: relative;
+  transition: height 1s ease-in-out;
+  width: 90%;
+}
+
+.container:hover .defile {
+  height: 100%;
+  font-size: 80%;
+}
+
+img.console {
+  width: 90%;
+  border-radius: 10%;
+}
+h3,
+h4 {
+  color: #d82622;
+  font-size: 100%;
+}
+h3 {
+  font-size: 150%;
+}
+h5 {
+  color: #8198e9;
+}
+body p {
+  color: rgb(165, 202, 207);
+  font-size: 1.5em;
+}
+.premier {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.premier img {
+  width: 15%;
+}
+
+.premier h3 {
+  margin-top: 5%;
+  margin-right: 10%;
+}
+.premier p {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+#pikachu {
+  margin-left: -3%;
+}
+#video {
+  width: 70%;
+}
+#descr {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+footer {
+  width: 70% !important;
+  margin-left: 15% !important;
+}
+@media only screen and (max-width: 960px) {
+  footer {
+    width: 100% !important;
+    margin-left: 0% !important;
+  }
+  main {
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    margin-left: 0%;
+  }
+  body p {
+    font-size: 100%;
+  }
+  .image2 {
+    margin-bottom: 3%;
+  }
+  #descr {
+    display: inline;
+  }
+  #descr p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #descr video {
+    margin-right: 9%;
+  }
+  #histoire {
+    height: 50%;
+  }
+  #image3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #image3 img {
+    width: 50%;
+  }
+  .container:hover .defile {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .image2 {
+    display: inline;
+  }
+  .image2 p {
+    margin-top: -3em;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .image2 #histoire {
+    width: 50%;
+    height: 10%;
+  }
+  h3 {
+    font-size: 100%;
+  }
+  h4 {
+    font-size: 70%;
+  }
+  #image3 {
+    display: inline;
+  }
+  .container {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  photo h4 {
+    margin-top: 5%;
+  }
+  histoire h4 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  body p {
+    font-size: 100%;
+  }
+  .premier {
+    display: inline;
+  }
+  .premier h5 {
+    margin-bottom: 10%;
+  }
+  .premier #pikachu {
+    margin-left: 1%;
+  }
+  .premier p {
+    margin-right: 10%;
+  }
+  #descr {
+    display: inline;
+  }
+  #descr p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #descr video {
+    margin-right: 9%;
+  }
+}
+footer {
+  margin-left: 15%;
+  width: 80%;
+  background-color: black;
+  text-align: center;
+  margin-left: 10%;
+  padding-top: 1%;
+}
+footer p {
+  color: white;
+  font-size: 100%;
+}

@@ -5,12 +5,15 @@
   --secondary: #8198e9;
   --accent: #6f59e2;
   --titre: "Press Start 2P", system-ui;
-  --font2: "Roboto Slab", serif;
+  --font2: "Teko", sans-serif;
   --font3: "Teko", sans-serif;
 }
 body {
+  word-wrap: anywhere;
   background-image: url("images/video-games-mario-bros-super-mario-digital-art-wallpaper-preview.png");
   background-position: 50% 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
   width: 100%;
   object-fit: cover;
   background-attachment: fixed;
@@ -18,11 +21,13 @@ body {
   margin: 0;
 }
 main {
+  overflow-x: hidden;
+
   background-color: rgba(0, 0, 0, 1);
   text-align: center;
   color: #f9fefc;
-  width: 80%;
-  margin-left: 10%;
+  width: 70%;
+  margin-left: 15%;
 }
 h3 {
   font-family: "Press Start 2P";
@@ -219,7 +224,12 @@ footer {
 @media only screen and (max-width: 960px) {
   main {
     width: 100%;
-    margin-left: 0%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  body {
+    margin: 0;
   }
   h3 {
     font-family: "Press Start 2P";

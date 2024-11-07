@@ -1,0 +1,16 @@
+# robots.txt pour le site Back to Pixel Festival
+
+User-agent: *
+# Interdire l'accès aux dossiers d'administration et de configuration
+Disallow: /admin/
+Disallow: /config/
+
+# Bloquer l'accès aux fichiers spécifiques, par exemple les fichiers de test
+Disallow: /test.html
+Disallow: /temp/
+
+# Autoriser l'accès à toutes les autres pages
+Allow: /
+
+# Spécifier le lien vers le plan du site
+Sitemap: https://www.votresite.com/sitemap.xml
