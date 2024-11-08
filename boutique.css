@@ -1,48 +1,114 @@
-body{
-    background-image: url("images/mario.png");
-    background-size: 100%;
-    background-position: 50% 50%;
+:root {
+  --text: rgb(165, 202, 207);
+  --primary: #d82622;
+  --secondary: #8198e9;
+  --accent: #6f59e2;
+  --titre: "Press Start 2P", system-ui;
+  --font3: "Teko", sans-serif;
+}
+html {
+  overflow-wrap: anywhere;
+}
+body {
+  background-image: url("images/mario.png");
+  background-size: 100%;
+  background-position: 50% 50%;
+  width: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 1);
+  font-family: var(--font3);
+  color: var(--secondary);
+  width: 80%;
+  margin-left: 10%;
+}
+a button {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px var(--primary) solid;
+  box-shadow: var(--primary) 0 0 20px;
+  padding: 1em 2em 1em 2em;
+  transition: all 0.3s ease;
+}
+button:hover {
+  padding: 1.5em 2.5em 1.5em 2.5em;
+}
+h3 {
+  font-size: 2em;
+  color: var(--primary);
+  font-family: var(--titre);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+img {
+  width: 20%;
+}
+p {
+  width: 50%;
+}
+.img1,
+.img2 {
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.img2 {
+  justify-content: end;
+}
+.super,
+.zelda {
+  box-shadow: var(--primary) 0 0 20px;
+}
+footer {
+  margin-left: 35% !important;
+  width: 60% !important;
+  font-size: 0.5em !important;
+}
+@media only screen and (max-width: 960px) {
+  p {
+    font-size: 1em;
+  }
+  main {
+    overflow: hidden;
     width: 100%;
-    object-fit: cover;
-    background-attachment: fixed;
-    padding: 0;
     margin: 0;
-
-}
-
-main{
-    background-color: rgba(0,0,0,1);
-    text-align: center;
-    color: #f9fefc;
-    width: 80%;
-    margin-left: 10%;
-}
-h3{
+    padding: 0;
+  }
+  h3 {
     font-size: 2em;
     color: var(--primary);
     font-family: var(--titre);
     padding-top: 2%;
     padding-bottom: 2%;
-
-}
-.img1{
+  }
+  .img1,
+  .img2 {
     display: flex;
-}
-.super{
-    width: 20%;
+  }
+
+  .super,
+  .zelda {
     object-fit: cover;
     padding-top: 2%;
     margin-left: 2%;
-}
-p {
+    width: 20%;
+  }
+
+  p {
     text-align: center;
     padding-top: 6%;
     color: var(--secondary);
     font-family: var(--font3);
-    font-size: 1.6em;
-}
-.envoyer{
-    margin-top: 23%;
+  }
+  .envoyer {
     text-decoration: none;
     font-family: var(--font3);
     color: var(--secondary);
@@ -53,124 +119,41 @@ p {
     border-radius: 20px;
     cursor: pointer;
     background-color: black;
-}
+  }
+  .zelda {
+    height: 200px;
+    object-fit: contain;
+  }
 
-.zelda{
-    width: 15%;
-    margin-left: 5%;
-}
-
-footer {
+  footer {
     margin-left: 15%;
     width: 70%;
-    margin-top: 10%;
+    margin-top: 20%;
     background-color: black;
     text-align: center;
+  }
 }
-@media only screen and (max-width: 960px) {
-    h3{
-        font-size: 2em;
-        color: var(--primary);
-        font-family: var(--titre);
-        padding-top: 2%;
-        padding-bottom: 2%;
-
-    }
-    .img1{
-        display: flex;
-    }
-    .super{
-        width: 26%;
-        object-fit: cover;
-        padding-top: 2%;
-        margin-left: 2%;
-    }
-    p {
-        text-align: center;
-        padding-top: 6%;
-        color: var(--secondary);
-        font-family: var(--font3);
-        font-size: 1.6em;
-    }
-    .envoyer{
-        margin-top: 50%;
-        text-decoration: none;
-        font-family: var(--font3);
-        color: var(--secondary);
-        margin-right: 10%;
-        padding: 1%;
-        font-size: 2.2em;
-        border: 3px solid var(--primary);
-        border-radius: 20px;
-        cursor: pointer;
-        background-color: black;
-    }
-
-    footer {
-        margin-left: 15%;
-        width: 70%;
-        margin-top: 20%;
-        background-color: black;
-        text-align: center;
-    }
-
-}
-@media only screen  and ( max-width: 768px) {
-    h3{
-        font-size: 2em;
-        color: var(--primary);
-        font-family: var(--titre);
-        padding-top: 2%;
-        padding-bottom: 2%;
-
-    }
-    .img1{
-        display: inline;
-
-    }
-    .super{
-        width: 70%;
-        object-fit: cover;
-        padding-top: 2%;
-        margin-left: 2%;
-    }
-    p {
-        text-align: center;
-        padding-top: 6%;
-        color: var(--secondary);
-        font-family: var(--font3);
-        font-size: 1.6em;
-    }
-    .envoyer{
-        margin-top:1% ;
-        margin-bottom: 10%;
-        text-decoration: none;
-        font-family: var(--font3);
-        color: var(--secondary);
-        margin-left: 8%;
-        padding: 1%;
-        font-size: 2.2em;
-        border: 3px solid var(--primary);
-        border-radius: 20px;
-        cursor: pointer;
-        background-color: black;
-    }
-    .zelda{
-        width: 40%;
-    }
-    a{
-        display: block;
-    }
-
-
-    footer {
-        margin-left: 15%;
-        width: 70%;
-        margin-top: 20%;
-        background-color: black;
-        text-align: center;
-    }
-
-
-
+@media only screen and (max-width: 720px) {
+  p {
+    width: 70%;
+  }
+  .envoyer {
+    margin-right: 0;
+  }
+  .super,
+  .zelda {
+    width: 30%;
+  }
+  .img2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-bottom: 10em;
+    margin-top: 30em;
+  }
+  .img1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20em;
+  }
 }
