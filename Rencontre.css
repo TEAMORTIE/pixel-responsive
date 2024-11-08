@@ -157,7 +157,7 @@ button {
   border-radius: 10px;
   padding: 1%;
   margin-top: 3%;
-  font-size: 2.5em;
+  font-size: 1em;
   margin-left: 70%;
   font-family: "Teko", sans-serif;
 }
@@ -340,7 +340,7 @@ footer {
     border-radius: 10px;
     padding: 2%;
     margin-top: 3%;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-left: 75%;
     font-family: "Teko", sans-serif;
   }
@@ -459,6 +459,7 @@ footer {
     border-radius: 10px;
     background-color: black;
     color: #8198e9;
+    font-size: 1em;
     border: 3px solid #d82622;
     font-family: "Teko", sans-serif;
   }
@@ -500,7 +501,7 @@ footer {
     border-radius: 10px;
     padding: 2%;
     margin-top: 3%;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-left: 75%;
     font-family: "Teko", sans-serif;
   }
@@ -555,4 +556,10 @@ ul {
   margin-top: 10%;
   margin-right: 2%;
   font-size: 3em;
+}
+
+@media only screen and (max-width: 426px) {
+  li {
+    font-size: 0.7em;
+  }
 }
